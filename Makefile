@@ -6,7 +6,7 @@
 #    By: darkwater <marvin@42.fr>                   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/20 01:44:05 by darkwater         #+#    #+#              #
-#    Updated: 2024/03/18 05:51:12 by darkwater        ###   ########.fr        #
+#    Updated: 2024/03/18 06:14:44 by darkwater        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -105,22 +105,22 @@ all: $(NAME)
 
 $(NAME): $(OBJ_OUTPUT) $(OBJS)
 	@$(LIBFT_COMP)
-	$(AR) $(NAME) $(OBJS)
+	@$(AR) $(NAME) $(OBJS)
 
 $(OBJ_OUTPUT):
 	@$(BEGIN_COMP)
 	@touch $(OBJ_OUTPUT)
 
 %.o: %.c
-	$(CC) $(CFLAGS) -c -I $(HEADER) $< -o $@
+	@$(CC) $(CFLAGS) -c -I $(HEADER) $< -o $@
 
 clean:
 	@$(CLEAN_MSG)
-	rm -f $(OBJ_OUTPUT) $(OBJS)
+	@rm -f $(OBJ_OUTPUT) $(OBJS)
 
 fclean: clean
 	@$(FCLEAN_MSG)
-	rm -f $(NAME)
+	@rm -f $(NAME)
 
 re: fclean all
 

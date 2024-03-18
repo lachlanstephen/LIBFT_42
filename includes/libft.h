@@ -6,7 +6,7 @@
 /*   By: darkwater <marvin@42.fr>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/20 01:57:31 by darkwater         #+#    #+#             */
-/*   Updated: 2024/03/18 05:48:04 by darkwater        ###   ########.fr       */
+/*   Updated: 2024/03/18 06:33:39 by darkwater        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,13 +83,12 @@ void		ft_lstiter(t_list *lst, void (*f)(void *));
 
 // ft_printf Functions
 
-
-int				ft_printf(const char *str, ...);
-int				ft_printf_char(int c);
-int				ft_printf_str(char *str);
-int				ft_printf_int(int num);
-int				ft_printf_ptr(void *ptr);
-int				ft_printf_unsigned(unsigned int num);
-int				ft_printf_hex(unsigned int num, char type);
+int			ft_printf(const char *str, ...);
+int			ft_printf_char(int c);
+int			ft_printf_str(char *str);
+int			ft_printf_int(int num);
+int			ft_printf_ptr(void *ptr);
+int			ft_printf_unsigned(unsigned int num);
+int			ft_printf_hex(unsigned int num, char type);
 
 #endif

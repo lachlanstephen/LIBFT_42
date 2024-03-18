@@ -6,7 +6,7 @@
 #    By: darkwater <marvin@42.fr>                   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/20 01:44:05 by darkwater         #+#    #+#              #
-#    Updated: 2024/03/18 06:14:44 by darkwater        ###   ########.fr        #
+#    Updated: 2024/03/18 15:04:59 by darkwater        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -91,11 +91,11 @@ NC				= \033[0m
 
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ Messages ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
 
-BEGIN_COMP		= echo "\n ~ ~ ~ $(GREEN)Compiling Objects$(NC) ~ ~ ~\n"
+BEGIN_COMP		= echo "\n ~ ~ ~ $(GREEN)Compiling LIBFT Objects$(NC) ~ ~ ~\n"
 
 LIBFT_COMP		= echo "\n ~ ~ ~ $(GREEN)Compiling LIBFT$(NC) ~ ~ ~\n"
 
-CLEAN_MSG		= echo "\n ~ ~ ~ $(RED)Cleaning all object files$(NC) ~ ~ ~\n"
+CLEAN_MSG		= echo "\n ~ ~ ~ $(RED)Cleaning all LIBFT object files$(NC) ~ ~ ~\n"
 
 FCLEAN_MSG		= echo "\n ~ ~ ~ $(RED)Removing LIBFT$(NC) ~ ~ ~\n"
 

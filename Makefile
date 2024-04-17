@@ -6,7 +6,7 @@
 #    By: darkwater <marvin@42.fr>                   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/20 01:44:05 by darkwater         #+#    #+#              #
-#    Updated: 2024/03/18 15:04:59 by darkwater        ###   ########.fr        #
+#    Updated: 2024/04/17 20:59:25 by lstephen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -79,8 +79,6 @@ CFLAGS			= -Wall -Wextra -Werror -Wpedantic
 
 AR				= ar -crs
 
-AR_FINAL		= ar -rs
-
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ Colours  ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
 
 RED				= \033[0;31m
@@ -115,12 +113,11 @@ $(OBJ_OUTPUT):
 	@$(CC) $(CFLAGS) -c -I $(HEADER) $< -o $@
 
 clean:
-	@$(CLEAN_MSG)
-	@rm -f $(OBJ_OUTPUT) $(OBJS)
+	@$(RM) $(OBJ_OUTPUT) $(OBJS)
 
 fclean: clean
 	@$(FCLEAN_MSG)
-	@rm -f $(NAME)
+	@$(RM) $(NAME)
 
 re: fclean all
 

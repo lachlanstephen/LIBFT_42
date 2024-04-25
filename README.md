@@ -47,6 +47,8 @@ make re -f testing_Makefile
 ```
 <p>Compare the user output with the expected output.</p>
 
+<p><i>Note</i>: My test files aren't fully complete currently. On my to-do list.</p>
+
 **_Important_: Make sure to run `make fclean -f testing_Makefile` to clean up files before submitting for evaluation.**
 
 <h3>Future Use of LIBFT</h3>
@@ -58,3 +60,9 @@ make re -f testing_Makefile
 
 # e.g. cc -Wall -Wextra -Werror *.o -L./libft/ -lft -o program
 ```
+
+<h4>Plan for repository</h4>
+
+- [ ] Complete test cases in `main.c` for mandatory functions
+- [ ] Create test functions for bonus functions
+- [ ] Return whether diff of output is same or different

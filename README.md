@@ -23,11 +23,17 @@
 make re
 
 # This creates the function library libft.a at the root
+
+# Make with bonuses (separate as per subject requirements)
+
+make bonus
 ```
 
 <h3>Testing LIBFT functions</h3>
 
-<p>Run these commands to test the libft functionality:</p>
+<p>To test your own LIBFT, download the main.c and testing_Makefile from my repo.</p>
+
+<p>Run these commands to test your libft functionality:</p>
 
 ```bash
 
@@ -41,4 +47,12 @@ make re -f testing_Makefile
 ```
 <p>Compare the user output with the expected output</p>
 
+<h3>Future Use of LIBFT</h3>
 
+<p>libft.a can be linked with compilations in future using:</p>
+
+```bash
+-L<LIBFT_directory> -lft
+
+# e.g. cc -Wall -Wextra -Werror *.o -L./libft/ -lft -o program
+```

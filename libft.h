@@ -6,13 +6,12 @@
 /*   By: darkwater <marvin@42.fr>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/20 01:57:31 by darkwater         #+#    #+#             */
-/*   Updated: 2024/03/18 06:33:39 by darkwater        ###   ########.fr       */
+/*   Updated: 2023/11/30 23:08:00 by darkwater        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-
 # include <stdbool.h>
 # include <stdio.h>
 # include <ctype.h>
@@ -20,7 +19,6 @@
 # include <stddef.h>
 # include <stdlib.h>
 # include <unistd.h>
-# include <stdarg.h>
 
 typedef struct s_list
 {
@@ -80,15 +78,5 @@ void		ft_lstadd_back(t_list **lst, t_list *new);
 void		ft_lstdelone(t_list *lst, void (*del)(void *));
 void		ft_lstclear(t_list **lst, void (*del)(void *));
 void		ft_lstiter(t_list *lst, void (*f)(void *));
-
-// ft_printf Functions
-
-int			ft_printf(const char *str, ...);
-int			ft_printf_char(int c);
-int			ft_printf_str(char *str);
-int			ft_printf_int(int num);
-int			ft_printf_ptr(void *ptr);
-int			ft_printf_unsigned(unsigned int num);
-int			ft_printf_hex(unsigned int num, char type);
 
 #endif

@@ -1,18 +1,19 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
+#    testing_Makefile                                   :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: darkwater <marvin@42.fr>                   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/20 01:44:05 by darkwater         #+#    #+#              #
-#    Updated: 2024/04/26 02:20:07 by darkwater        ###   ########.fr        #
+#    Updated: 2024/04/26 02:35:47 by darkwater        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME			= libft.a
+NAME			= test_libft
 
-SRC				= ft_atoi.c			\
+SRC				= main.c			\
+				  ft_atoi.c			\
 				  ft_bzero.c		\
 				  ft_calloc.c		\
 				  ft_isalnum.c		\
@@ -71,8 +72,6 @@ CC				= cc
 
 CFLAGS			= -Wall -Wextra -Werror
 
-AR				= ar -crs
-
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ Colours  ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
 
 RED				= \033[0;31m
@@ -87,9 +86,7 @@ BEGIN_COMP		= echo "\n ~ ~ ~ $(GREEN)Compiling LIBFT Objects$(NC) ~ ~ ~\n"
 
 BONUS_OBJ_COMP	= echo "\n ~ ~ ~ $(GREEN)Compiling Bonus Objects$(NC) ~ ~ ~\n"
 
-BONUS_COMP		= echo "\n ~ ~ ~ $(GREEN)Adding Bonus Functions to LIBFT$(NC) ~ ~ ~\n"
-
-LIBFT_COMP		= echo "\n ~ ~ ~ $(GREEN)Compiling LIBFT$(NC) ~ ~ ~\n"
+TESTER_COMP		= echo "\n ~ ~ ~ $(GREEN)Compiling LIBFT Tester$(NC) ~ ~ ~\n"
 
 CLEAN_MSG		= echo "\n ~ ~ ~ $(RED)Cleaning all LIBFT object files$(NC) ~ ~ ~\n"
 
@@ -97,15 +94,14 @@ FCLEAN_MSG		= echo "\n ~ ~ ~ $(RED)Removing LIBFT$(NC) ~ ~ ~\n"
 
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ Rules ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
 
-all: $(NAME)
+all: begin $(NAME)
 
-bonus: $(NAME) $(BON_OBJ_OUTPUT) $(BONUS_OBJS)
-	@$(BONUS_COMP)
-	$(AR) $(NAME) $(BONUS_OBJS)
+begin:
+	$(MAKE) fclean
 
-$(NAME): $(OBJ_OUTPUT) $(OBJS)
-	@$(LIBFT_COMP)
-	$(AR) $(NAME) $(OBJS)
+$(NAME): $(OBJ_OUTPUT) $(OBJS) $(BON_OBJ_OUTPUT) $(BONUS_OBJS)
+	@$(TESTER_COMP)
+	$(CC) $(CFLAGS) $(OBJS) $(BONUS_OBJS) -o $(NAME)
 
 $(OBJ_OUTPUT):
 	@$(BEGIN_COMP)
@@ -128,4 +124,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all bonus clean fclean re
+.PHONY: all begin clean fclean re

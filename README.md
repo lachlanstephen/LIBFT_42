@@ -4,7 +4,7 @@
 
 <p>LIBFT, the first project in the 42 Cursus, set about teaching us how standard functions in C work, by implementing our own versions, whilst matching the original functions functionality as per their manual entries. From these functions, we create our own library to use in future projects.</p>
 
-<p>This project was split into 3 parts</p>
+<p>This project was split into 3 parts:</p>
 
 <ol>
 <li>Standard C Library (libc) Functions - Same protoypes and comply with definition as in the man</li>
@@ -31,7 +31,7 @@ make bonus
 
 <h3>Testing LIBFT functions</h3>
 
-<p>To test your own LIBFT, download the main.c and testing_Makefile from my repo.</p>
+<p>To test your own LIBFT, download the ```main.c``` and ```testing_Makefile``` from my repo.</p>
 
 <p>Run these commands to test your libft functionality:</p>
 

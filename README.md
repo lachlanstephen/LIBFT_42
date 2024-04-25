@@ -31,7 +31,7 @@ make bonus
 
 <h3>Testing LIBFT functions</h3>
 
-To test your own LIBFT, download the `main.c` and `testing_Makefile` files from my repo.
+To test your own LIBFT, download the [`main.c`](./libft/main.c) and [`testing_Makefile`](./libft/testing_Makefile) files from my repo.
 
 <p>Run these commands to test your libft functionality:</p>
 

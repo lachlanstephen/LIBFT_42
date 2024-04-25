@@ -47,6 +47,8 @@ make re -f testing_Makefile
 ```
 <p>Compare the user output with the expected output.</p>
 
+<b>Important:</b> Make sure to run `make fclean -f testing_Makefile` to clean up files before submitting for evaluation.
+
 <h3>Future Use of LIBFT</h3>
 
 <p>libft.a can be linked with compilations in future using:</p>

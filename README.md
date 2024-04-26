@@ -2,7 +2,7 @@
 
 <h3>Mark: 125/100</h3>
 
-`LIBFT`, the first project in the 42 Cursus, set about teaching us how standard functions in C work, by implementing our own versions, whilst matching the original functions functionality as per their manual entries. From these functions, we create our own library to use in future projects.
+LIBFT, the first project in the 42 Cursus, set about teaching us how standard functions in C work, by implementing our own versions, whilst matching the original functions functionality as per their manual entries. From these functions, we create our own library to use in future projects.
 
 <p>This project was split into 3 parts:</p>
 

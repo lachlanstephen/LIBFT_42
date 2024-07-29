@@ -6,7 +6,7 @@
 /*   By: darkwater <marvin@42.fr>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/20 01:54:02 by darkwater         #+#    #+#             */
-/*   Updated: 2024/04/26 02:29:07 by darkwater        ###   ########.fr       */
+/*   Updated: 2024/07/29 14:18:34 by lstephen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -276,9 +276,9 @@ void	ft_atoi_tests(void)
 	printf("Inbuilt function: %d\n", atoi("2147483647"));
 	printf("My function: %d\n", ft_atoi("-2147483648"));
 	printf("Inbuilt function: %d\n", atoi("-2147483648"));
-	printf("My function: %d\n", ft_atoi("        23487rt923    "));
-	printf("Inbuilt function: %d\n", atoi("        23487rt923    "));
-	printf("My function: %d\n", ft_atoi("--2399"));
+	printf("My function: %d\n", ft_atoi("        +23487rt923    "));
+	printf("Inbuilt function: %d\n", atoi("        +23487rt923    "));
+	printf("My function: %d\n", ft_atoi("   --2399"));
 	printf("Inbuilt function: %d\n", atoi("   --2399"));
 	printf("My function: %d\n", ft_atoi("2147483690"));
 	printf("Inbuilt function: %d\n", atoi("2147483690"));
